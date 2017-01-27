@@ -17,7 +17,7 @@ private double cost;
 public String description;
 
  public Article (){ //Constructor
-        this(000000000,00,00.00,00.00,"No description");      
+        this(000000000,00,00.00,00.00,"No description"); 
     }
     
 public Article (int sku, int existence, double price, double cost, String description){
@@ -31,7 +31,6 @@ public Article (int sku, int existence, double price, double cost, String descri
 public void purchase (int quantity, double price){
     this.existence+=quantity;
     this.cost=price; 
-    System.out.println("Article.purchase called");
 }
 
 public boolean sale (int quantity){
@@ -43,13 +42,12 @@ public boolean sale (int quantity){
              return false;
          }
     }
-public void checkExistence (){
+public boolean checkExistence (){
     this.existence=existence;
-    System.out.println("Article.checkExistence called");
+    return true;
     }
 public void updatePrice(double price){
     this.price=price;
-    System.out.println("Article.updatePrice called");
     }
 
 }
