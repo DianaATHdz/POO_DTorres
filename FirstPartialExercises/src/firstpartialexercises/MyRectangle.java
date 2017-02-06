@@ -33,12 +33,12 @@ public class MyRectangle {
  
        //SACAR AREA
     public double getArea() {
-        return v1.distance(v2) * v1.distance(v2);
+        return (this.v1.getX()-this.v2.getX())*(this.v2.getY()-this.v1.getY());
     }
     
     //SACAR PERIMETRO
     public double getPerimeter() {
-        return v1.distance(v2) + v1.distance(v2);
+        return ((this.v1.getX()-this.v2.getX())+(this.v2.getY()-this.v1.getY()))*2;
     }
     
 }
