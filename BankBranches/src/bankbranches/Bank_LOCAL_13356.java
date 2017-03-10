@@ -45,11 +45,6 @@ public class Bank {
     public boolean addCustomer(String name, String customerName, double amount) {
         int pos = findBranch(name);
         if (pos != -1) {
-<<<<<<< HEAD
-=======
-               branche.get(pos).add                        
-               branches.get(position).addCostumer(costumer,amount);
->>>>>>> 107d531735e415587e939d051771b4b452f5cb0f
                System.out.println("Customer: " + customerName + " registered successfully. Initial amount: " + amount);
                return true;
            } else {
